@@ -10,5 +10,7 @@ List should contain file sizes.
 4. Create a file "4.txt" as a result "ls" command on "/boot" directory. 
 List should be RECURSIVE.
 
-After completions make git commit and then git push
+After completions make git commit and then git push. 
+Also create file "solution", with commands for each of 1-4 items you used to 
+solve a task.
 
