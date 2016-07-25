@@ -1,0 +1,116 @@
+Скрипт запущен Пн 25 июл 2016 17:53:04
+]0;sv9t@sv9t-desktop: ~/bash_lessons/001sv9t@sv9t-desktop:~/bash_lessons/001$ ls -К[KR /boot
+/boot:
+abi-4.4.0-21-generic         memtest86+.bin
+abi-4.4.0-31-generic         memtest86+.elf
+config-4.4.0-21-generic      memtest86+_multiboot.bin
+config-4.4.0-31-generic      System.map-4.4.0-21-generic
+[0m[01;34mgrub[0m                         System.map-4.4.0-31-generic
+initrd.img-4.4.0-21-generic  vmlinuz-4.4.0-21-generic
+initrd.img-4.4.0-31-generic  vmlinuz-4.4.0-31-generic
+
+/boot/grub:
+[01;34mfonts[0m  gfxblacklist.txt  grub.cfg  grubenv  [01;34mi386-pc[0m  [01;34mlocale[0m  unicode.pf2
+
+/boot/grub/fonts:
+unicode.pf2
+
+/boot/grub/i386-pc:
+915resolution.mod     gcry_whirlpool.mod        password_pbkdf2.mod
+acpi.mod              gdb.mod                   pata.mod
+adler32.mod           geli.mod                  pbkdf2.mod
+affs.mod              gettext.mod               pbkdf2_test.mod
+afs.mod               gfxmenu.mod               pcidump.mod
+ahci.mod              gfxterm_background.mod    pci.mod
+all_video.mod         gfxterm_menu.mod          plan9.mod
+aout.mod              gfxterm.mod               play.mod
+archelp.mod           gptsync.mod               png.mod
+ata.mod               gzio.mod                  priority_queue.mod
+at_keyboard.mod       halt.mod                  probe.mod
+backtrace.mod         hashsum.mod               procfs.mod
+bfs.mod               hdparm.mod                progress.mod
+biosdisk.mod          hello.mod                 pxechain.mod
+bitmap.mod            help.mod                  pxe.mod
+bitmap_scale.mod      hexdump.mod               raid5rec.mod
+blocklist.mod         hfs.mod                   raid6rec.mod
+boot.img              hfspluscomp.mod           read.mod
+boot.mod              hfsplus.mod               reboot.mod
+bsd.mod               http.mod                  regexp.mod
+btrfs.mod             hwmatch.mod               reiserfs.mod
+bufio.mod             iorw.mod                  relocator.mod
+cat.mod               iso9660.mod               romfs.mod
+cbfs.mod              jfs.mod                   scsi.mod
+cbls.mod              jpeg.mod                  search_fs_file.mod
+cbmemc.mod            keylayouts.mod            search_fs_uuid.mod
+cbtable.mod           keystatus.mod             search_label.mod
+cbtime.mod            ldm.mod                   search.mod
+chain.mod             legacycfg.mod             sendkey.mod
+cmdline_cat_test.mod  legacy_password_test.mod  serial.mod
+cmosdump.mod          linux16.mod               setjmp.mod
+cmostest.mod          linux.mod                 setjmp_test.mod
+cmp.mod               loadenv.mod               setpci.mod
+command.lst           loopback.mod              sfs.mod
+configfile.mod        lsacpi.mod                signature_test.mod
+core.img              lsapm.mod                 sleep.mod
+cpio_be.mod           lsmmap.mod                sleep_test.mod
+cpio.mod              ls.mod                    spkmodem.mod
+cpuid.mod             lspci.mod                 squash4.mod
+crc64.mod             luks.mod                  syslinuxcfg.mod
+cryptodisk.mod        lvm.mod                   tar.mod
+crypto.lst            lzopio.mod                terminal.lst
+crypto.mod            macbless.mod              terminal.mod
+cs5536.mod            macho.mod                 terminfo.mod
+datehook.mod          mda_text.mod              test_blockarg.mod
+date.mod              mdraid09_be.mod           testload.mod
+datetime.mod          mdraid09.mod              test.mod
+diskfilter.mod        mdraid1x.mod              testspeed.mod
+disk.mod              memdisk.mod               tftp.mod
+div_test.mod          memrw.mod                 tga.mod
+dm_nv.mod             minicmd.mod               time.mod
+drivemap.mod          minix2_be.mod             trig.mod
+echo.mod              minix2.mod                tr.mod
+efiemu32.o            minix3_be.mod             truecrypt.mod
+efiemu64.o            minix3.mod                true.mod
+efiemu.mod            minix_be.mod              udf.mod
+ehci.mod              minix.mod                 ufs1_be.mod
+elf.mod               mmap.mod                  ufs1.mod
+eval.mod              moddep.lst                ufs2.mod
+exfat.mod             modinfo.sh                uhci.mod
+exfctest.mod          morse.mod                 usb_keyboard.mod
+ext2.mod              mpi.mod                   usb.mod
+extcmd.mod            msdospart.mod             usbms.mod
+fat.mod               multiboot2.mod            usbserial_common.mod
+file.mod              multiboot.mod             usbserial_ftdi.mod
+font.mod              nativedisk.mod            usbserial_pl2303.mod
+freedos.mod           net.mod                   usbserial_usbdebug.mod
+fshelp.mod            newc.mod                  usbtest.mod
+fs.lst                nilfs2.mod                vbe.mod
+functional_test.mod   normal.mod                verify.mod
+gcry_arcfour.mod      ntfscomp.mod              vga.mod
+gcry_blowfish.mod     ntfs.mod                  vga_text.mod
+gcry_camellia.mod     ntldr.mod                 video_bochs.mod
+gcry_cast5.mod        odc.mod                   video_cirrus.mod
+gcry_crc.mod          offsetio.mod              video_colors.mod
+gcry_des.mod          ohci.mod                  video_fb.mod
+gcry_dsa.mod          part_acorn.mod            videoinfo.mod
+gcry_idea.mod         part_amiga.mod            video.lst
+gcry_md4.mod          part_apple.mod            video.mod
+gcry_md5.mod          part_bsd.mod              videotest_checksum.mod
+gcry_rfc2268.mod      part_dfly.mod             videotest.mod
+gcry_rijndael.mod     part_dvh.mod              xfs.mod
+gcry_rmd160.mod       part_gpt.mod              xnu.mod
+gcry_rsa.mod          partmap.lst               xnu_uuid.mod
+gcry_seed.mod         part_msdos.mod            xnu_uuid_test.mod
+gcry_serpent.mod      part_plan.mod             xzio.mod
+gcry_sha1.mod         part_sun.mod              zfscrypt.mod
+gcry_sha256.mod       part_sunpc.mod            zfsinfo.mod
+gcry_sha512.mod       parttool.lst              zfs.mod
+gcry_tiger.mod        parttool.mod
+gcry_twofish.mod      password.mod
+
+/boot/grub/locale:
+en_AU.mo  en_CA.mo  en_GB.mo
+]0;sv9t@sv9t-desktop: ~/bash_lessons/001sv9t@sv9t-desktop:~/bash_lessons/001$ exit
+exit
+
+Скрипт выполнен Пн 25 июл 2016 17:54:01

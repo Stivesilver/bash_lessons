@@ -1,0 +1,20 @@
+Скрипт запущен Пн 25 июл 2016 17:52:15
+]0;sv9t@sv9t-desktop: ~/bash_lessons/001sv9t@sv9t-desktop:~/bash_lessons/001$ ls -lh ~
+итого 52K
+drwxrwxr-x  4 sv9t sv9t 4,0K июл 25 16:13 [0m[01;34mbash_lessons[0m
+drwxr-xr-x  3 sv9t sv9t 4,0K июл 23 23:21 [01;34mDesktop[0m
+drwxr-xr-x 11 sv9t sv9t 4,0K июл 22 22:34 [01;34mDocuments[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 22 22:33 [01;34mDownloads[0m
+drwxrwxr-x  3 sv9t sv9t 4,0K июл 21 17:19 [01;34mIdeaProjects[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mВидео[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mДокументы[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mЗагрузки[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mИзображения[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mМузыка[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mОбщедоступные[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mРабочий стол[0m
+drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 [01;34mШаблоны[0m
+]0;sv9t@sv9t-desktop: ~/bash_lessons/001sv9t@sv9t-desktop:~/bash_lessons/001$ exit
+exit
+
+Скрипт выполнен Пн 25 июл 2016 17:52:35
