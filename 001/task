@@ -1,0 +1,14 @@
+1. Create a file "1.txt" as a result "ls" command on "/etc" directory. File
+should be placed inside this folder "001"
+
+2. Create a file "2.txt" as a result "ls" command on "~" directory. 
+List should contain hidden files. 
+
+3. Create a file "3.txt" as a result "ls" command on "~" directory. 
+List should contain file sizes.
+
+4. Create a file "4.txt" as a result "ls" command on "/boot" directory. 
+List should be RECURSIVE.
+
+After completions make git commit and then git push
+
