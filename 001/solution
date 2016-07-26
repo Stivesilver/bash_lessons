@@ -1,5 +1,4 @@
 sv9t@sv9t-desktop:~$ cd ~/bash_lessons/001
-sv9t@sv9t-desktop:~/bash_lessons/001$ ls /etc > 1.file.txt
 sv9t@sv9t-desktop:~/bash_lessons/001$ ls /etc > 1.txt
 sv9t@sv9t-desktop:~/bash_lessons/001$ ls -a ~ > 2.txt
 sv9t@sv9t-desktop:~/bash_lessons/001$ ls -lh ~ > 3.txt
