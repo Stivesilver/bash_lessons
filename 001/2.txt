@@ -1,23 +1,50 @@
-Скрипт запущен Пн 25 июл 2016 17:45:28
-]0;sv9t@sv9t-desktop: ~/bash_lessons/001sv9t@sv9t-desktop:~/bash_lessons/001$ ls -a ~
-[0m[01;34m.[0m              .gitconfig                 [01;34m.thumbnails[0m
-[01;34m..[0m             .gksu.lock                 .viminfo
-.1.txt.swo     [01;34m.gnome[0m                     .Xauthority
-.1.txt.swp     [01;36m.icons[0m                     .xinputrc
-[01;34m.android[0m       [01;34m.IdeaIC2016.2[0m              .xscreensaver
-.bash_history  [01;34mIdeaProjects[0m               .xsession-errors
-[01;34mbash_lessons[0m   [01;34m.IntelliJIdea2016.2[0m        .xsession-errors.old
-.bash_logout   [01;34m.java[0m                      [01;34mВидео[0m
-.bashrc        [01;34m.local[0m                     [01;34mДокументы[0m
-[01;34m.cache[0m         [01;34m.mozilla[0m                   [01;34mЗагрузки[0m
-[01;34m.config[0m        [01;34m.oracle_jre_usage[0m          [01;34mИзображения[0m
-[01;34m.dbus[0m          .pam_environment           [01;34mМузыка[0m
-[01;34mDesktop[0m        [01;34m.pki[0m                       [01;34mОбщедоступные[0m
-.dmrc          .profile                   [01;34mРабочий стол[0m
-[01;34mDocuments[0m      [01;34m.ssh[0m                       [01;34mШаблоны[0m
-[01;34mDownloads[0m      .sudo_as_admin_successful
-[01;34m.gconf[0m         .swp
-]0;sv9t@sv9t-desktop: ~/bash_lessons/001sv9t@sv9t-desktop:~/bash_lessons/001$ exit
-exit
-
-Скрипт выполнен Пн 25 июл 2016 17:45:44
+.
+..
+.1.txt.swo
+.1.txt.swp
+2016-07-25-232739_1280x1024_scrot.png
+.android
+.bash_history
+bash_lessons
+.bash_logout
+.bashrc
+.cache
+.config
+.dbus
+Desktop
+.dmrc
+Documents
+Downloads
+.gconf
+.gitconfig
+.gksu.lock
+.gnome
+.icons
+.IdeaIC2016.2
+IdeaProjects
+.IntelliJIdea2016.2
+.java
+.local
+.mozilla
+.oracle_jre_usage
+.pam_environment
+.pki
+.profile
+.ssh
+.sudo_as_admin_successful
+.swp
+.thumbnails
+.viminfo
+.Xauthority
+.xinputrc
+.xscreensaver
+.xsession-errors
+.xsession-errors.old
+Видео
+Документы
+Загрузки
+Изображения
+Музыка
+Общедоступные
+Рабочий стол
+Шаблоны
