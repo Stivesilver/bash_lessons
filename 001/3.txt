@@ -1,15 +1,10 @@
-итого 652K
--rw-rw-r--  1 sv9t sv9t 600K июл 25 23:27 2016-07-25-232739_1280x1024_scrot.png
-drwxrwxr-x  4 sv9t sv9t 4,0K июл 25 16:13 bash_lessons
-drwxr-xr-x  3 sv9t sv9t 4,0K июл 25 20:55 Desktop
-drwxr-xr-x 11 sv9t sv9t 4,0K июл 22 22:34 Documents
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 22 22:33 Downloads
-drwxrwxr-x  3 sv9t sv9t 4,0K июл 21 17:19 IdeaProjects
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 Видео
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 Документы
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 Загрузки
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 Изображения
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 Музыка
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 26 11:39 Общедоступные
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 23:22 Рабочий стол
-drwxr-xr-x  2 sv9t sv9t 4,0K июл 25 17:14 Шаблоны
+итого 36K
+drwxr-xr-x 4 sv9t sv9t 4,0K июля  27 21:19 bash_lessons
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:36 Видео
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  28 14:05 Документы
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:54 Загрузки
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:36 Изображения
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:36 Музыка
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:36 Общедоступные
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:36 Рабочий стол
+drwxr-xr-x 2 sv9t sv9t 4,0K июля  26 22:36 Шаблоны
