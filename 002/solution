@@ -1,0 +1,1 @@
+sort -n raskaz.txt > 1.txt
