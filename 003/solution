@@ -1,0 +1,5 @@
+tar -xf city.txt.tar.gz
+
+sotr city.txt > sorted.txt
+
+uniq -cid sorted.txt > uniq.txt
