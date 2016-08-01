@@ -1,3 +1,5 @@
+2 Ярославль Ярцево (Смоленская область)
+
 tar -xf city.txt.tar.gz
 
 sotr city.txt > sorted.txt
