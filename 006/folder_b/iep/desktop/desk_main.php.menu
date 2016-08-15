@@ -1,0 +1,121 @@
+<?php
+    Security::init();
+
+    function checkBlock($tsRefID, $stdIEPYear, $path) {
+        $fullpath = SystemCore::$physicalRoot . '/apps/idea' . $path;
+        if (file_exists($fullpath) && $path && $tsRefID > 0 && $stdIEPYear > 0) {
+            $a = include($fullpath);
+            return $a;
+        }
+        return true;
+    }
+
+    $tsRefID = CryptClass::factory()->decode(io::get('tsRefID'));
+    $student = new IDEAStudent($tsRefID);
+    $dskey = DataStorage::factory()
+        ->set('tsRefID', $tsRefID)
+        ->set('stdIEPYear', $student->get('stdiepyear'))
+        ->set('stdrefid', $student->get('stdrefid'))
+        ->set('stdname', $student->get('stdname'))
+        ->set('stdnamefml', $student->get('stdnamefml'))
+        ->set('stdlastname', $student->get('stdlastname'))
+        ->set('stdfirstname', $student->get('stdfirstname'))
+        ->set('stddob', $student->get('stddob'))
+        ->set('stdsex', $student->get('stdsex'))
+        ->set('stdschid', $student->get('stdschid'))
+        ->set('stdfedidnmbr', $student->get('stdfedidnmbr'))
+        ->set('stdstateidnmbr', $student->get('stdstateidnmbr'))
+        ->set('externalid', $student->get('externalid'))
+        ->set('grdlevel', $student->get('grdlevel'))
+        ->set('grdlevel_id', $student->get('grdlevel_id'))
+        ->set('ethcode', $student->get('ethcode'))
+        ->set('ethdesc', $student->get('ethdesc'))
+        ->set('vourefid', $student->get('vourefid'))
+        ->set('schoolid', $student->get('schoolid'))
+        ->set('stdage', $student->get('stdage'))
+        ->set('prim_lang', $student->get('prim_lang'))
+        ->set('stdhphn', $student->get('stdhphn'))
+        ->set('stdhphnmob', $student->get('stdhphnmob'))
+        ->set('stdhadr1', $student->get('stdhadr1'))
+        ->set('stdhcity', $student->get('stdhcity'))
+        ->set('stdhstate', $student->get('stdhstate'))
+        ->set('stdhzip', $student->get('stdhzip'))
+        ->set('stdphoto', $student->get('stdphoto'))
+        ->set('cmname', $student->get('cmname'))
+        ->set('cmnamelf', $student->get('cmnamelf'))
+        ->set('cmphone', $student->get('cmphone'))
+        ->set('screenURL', '/apps/idea/iep/desktop/desk_menu.php')
+        ->getKey();
+
+    $std_title = IDEAStudentCaption::get($tsRefID);
+
+    $b = new UIButtonsBar();
+
+    $b->addButton()
+        ->caption('Main Screen')
+        ->onClick('loadApp("./desk_menu.php");')
+        ->icon('../../../../apps/idea/img/mainscreen/std_mainscreen_48x48.png');
+
+    $b->addButton()
+        ->caption('Student Info')
+        ->onClick('loadApp("./desk_info.php");')
+        ->icon('../../../../apps/idea/img/mainscreen/std_' . ($student->get('stdsex') == 'Male' ? 'boy' : 'girl') . '_48x48.png');
+
+    $b->addButton()
+        ->caption('Check Data')
+        ->onClick('loadApp("' . CoreUtils::getURL('/apps/idea/iep/error/err_main.php') . '");')
+        ->icon('../../../../apps/idea/img/mainscreen/std_checkdata_48x48.png');
+    /*
+      $b->addButton()
+      ->caption('Clear Links History')
+      ->onClick('')
+      ->icon('../../../../apps/idea/img/mainscreen/std_clearhistory_48x48.png');
+     */
+
+    $str = '';
+    $allblocks = IDEAFormat::getDocBlocks();
+    for ($i = 0; $i < count($allblocks); $i++) {
+        if (checkBlock($tsRefID, $student->get('stdiepyear'), $allblocks[$i]['iepinclude']) == 1) {
+            $str .= $allblocks[$i]['iepnum'] . ',';
+        }
+    }
+    $url = CoreUtils::getURL(IDEAFormat::get('gen_file'), array('str' => $str, 'dskey' => $dskey, 'format' => 'pdf',));
+
+    $b->addButton()
+        ->caption('Preview IEP')
+        ->onClick($student->get('stdiepyear') > 0 ? "api.ajax.process(ProcessType.REPORT, '" . $url . "')" : "loadApp('./desk_menu.php')")
+        ->icon('../../../../apps/idea/img/mainscreen/std_previewiep_48x48.png');
+
+    print UIFrameSet::factory('105, auto', 'auto')
+            ->addFrame(
+                UIFrame::factory()
+                ->addObject(
+                    UIFrameSet::factory()
+                    ->addFrame(
+                        UIFrame::factory()
+                        ->indent(5)
+                        ->className('')
+                        ->addObject(
+                            UILayout::factory()
+                            ->addObject($b, 'middle [height: 114px]')
+                        )
+                    )
+                )
+            )
+            ->addFrame(
+                UIFrame::factory()
+                ->indent(5)
+                ->className('zTabsBarContainer')
+                ->url('')
+                ->id('workFrame')
+                ->scrollable(true, true)
+            )
+            ->toHTML();
+?>
+<script type="text/javascript">
+    loadApp('./desk_menu.php');
+    api.window.changeTitle(<?= json_encode($std_title); ?>);
+    function loadApp(url) {
+        $('#workFrame')[0].src = api.url(url, {'dskey': '<?= $dskey; ?>'});
+    }
+</script>

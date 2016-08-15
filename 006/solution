@@ -1,0 +1,5 @@
+tar -xf two_folders.tar.gz
+
+diff -r folder_a folder_b > changes
+
+Только в folder_a/iep/evalforms: frm_mode.php
