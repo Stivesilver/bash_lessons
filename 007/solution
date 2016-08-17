@@ -1,0 +1,4 @@
+cp task text_image
+vim text_image (отредактировал файл через вим. 
+Может был способ декодировать сразу из файла task, но я не нашёл :( )
+base64 -d text_image > image.png
