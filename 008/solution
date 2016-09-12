@@ -1,0 +1,9 @@
+1.find ~/ -maxdepth 1 | sort > files_catalogs 
+2. find ~/ -maxdepth 1 -type f|sort >only_files
+3. find ~/ -maxdepth 1 -type d|sort >only_catalogs
+4. find ~/ -maxdepth 1 -type f | wc -l > wc
+5. find ~/ -name '*ubuntu*' | sort > 5
+если ограничить глубину поиска (find ~/ -maxdepth 1 -name '*ubuntu*' | sort >> 5)
+только домашней папкой, то ничего не находит.
+
+6. find ~/ -name '*ubuntu*' -ls | sort > 6
